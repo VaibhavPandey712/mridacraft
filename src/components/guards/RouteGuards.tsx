@@ -15,28 +15,47 @@ function GuardSkeleton() {
   );
 }
 
-/** UX-level protection only — the backend remains the source of authorisation truth. */
+/** User authentication guard */
 export function RequireAuth({ children }: { children: ReactNode }) {
   const { user, sessionReady } = useApp();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (sessionReady && !user) navigate({ to: "/login", replace: true });
-  }, [sessionReady, user, navigate]);
+  // Google has redirected back with ?token=...
+  const pendingToken =
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).has("token");
 
-  if (!sessionReady || !user) return <GuardSkeleton />;
+  useEffect(() => {
+    if (sessionReady && !user && !pendingToken) {
+      navigate({ to: "/login", replace: true });
+    }
+  }, [sessionReady, user, pendingToken, navigate]);
+
+  if (pendingToken || !sessionReady) return <GuardSkeleton />;
+
+  if (!user) return null;
+
   return <>{children}</>;
 }
 
+/** Admin-only guard */
 export function RequireAdmin({ children }: { children: ReactNode }) {
   const { user, isAdmin, sessionReady } = useApp();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (sessionReady && !user) navigate({ to: "/login", replace: true });
-  }, [sessionReady, user, navigate]);
+  const pendingToken =
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).has("token");
 
-  if (!sessionReady || !user) return <GuardSkeleton />;
+  useEffect(() => {
+    if (sessionReady && !user && !pendingToken) {
+      navigate({ to: "/login", replace: true });
+    }
+  }, [sessionReady, user, pendingToken, navigate]);
+
+  if (pendingToken || !sessionReady) return <GuardSkeleton />;
+
+  if (!user) return null;
 
   if (!isAdmin) {
     return (
@@ -44,10 +63,13 @@ export function RequireAdmin({ children }: { children: ReactNode }) {
         <span className="grid size-12 place-items-center rounded-full bg-secondary text-clay">
           <ShieldAlert className="size-5" strokeWidth={1.5} />
         </span>
+
         <h1 className="text-3xl">Restricted area</h1>
+
         <p className="text-sm text-muted-foreground">
-          This section is reserved for studio administrators. Your account doesn’t have access.
+          This section is reserved for studio administrators.
         </p>
+
         <Button asChild variant="clay">
           <Link to="/">Back to the shop</Link>
         </Button>
