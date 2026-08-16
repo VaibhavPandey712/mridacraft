@@ -1,9 +1,23 @@
 import { createFileRoute, Link, Outlet, useNavigate } from "@tanstack/react-router";
 import { Heart, LogOut, MapPin, Package, Settings, User2 } from "lucide-react";
+import { useEffect } from "react";
 
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { RequireAuth } from "@/components/guards/RouteGuards";
 import { useApp } from "@/store/app-store";
+
+useEffect(() => {
+  const params = new URLSearchParams(window.location.search);
+  const token = params.get("token");
+
+  if (token) {
+    localStorage.setItem("token", token);
+
+    // remove token from URL
+    window.history.replaceState({}, "", "/profile");
+  }
+}, []);
+
 
 export const Route = createFileRoute("/profile")({
   component: () => (

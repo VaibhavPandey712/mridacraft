@@ -12,16 +12,18 @@ export class ApiError extends Error {
   }
 }
 
+
 export async function apiFetch<T>(endpoint: string, options?: RequestInit): Promise<T> {
-  const isFormData = typeof FormData !== "undefined" && options?.body instanceof FormData;
+  const isFormData =
+    typeof FormData !== "undefined" && options?.body instanceof FormData;
+
+  const token = localStorage.getItem("token");
 
   const response = await fetch(`${API_URL}${endpoint}`, {
     ...options,
-    credentials: "include",
     headers: {
-      // Never set Content-Type for FormData — the browser needs to add its
-      // own multipart boundary, and a hardcoded header breaks that.
       ...(isFormData ? {} : { "Content-Type": "application/json" }),
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...options?.headers,
     },
   });
