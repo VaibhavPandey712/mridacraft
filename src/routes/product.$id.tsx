@@ -22,7 +22,7 @@ export const Route = createFileRoute("/product/$id")({
   component: ProductPage,
   head: ({ loaderData, params }) => {
     const product = loaderData?.product;
-    const title = product ? `${product.name} — Handcrafted Lippan Wall Art | Lippen` : "Artwork | Lippen";
+    const title = product ? `${product.name} — Handcrafted Lippan Wall Art | Lippan` : "Artwork | Lippan";
     const description = product
       ? `${product.shortDescription}. ${product.description.slice(0, 110)}…`
       : "Handcrafted Lippan wall art from Kutch.";

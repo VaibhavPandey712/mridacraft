@@ -76,7 +76,7 @@ export function Navbar() {
           scrolled ? "h-16" : "h-20 md:h-24",
         )}
       >
-        <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Lippen home">
+        <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Lippan home">
           <span className="grid size-9 shrink-0 place-items-center rounded-full border border-gold/70 font-serif text-base text-clay">
             L
           </span>

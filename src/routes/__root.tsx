@@ -79,15 +79,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lippen — Handcrafted Lippan Wall Art" },
+      { title: "Lippan — Handcrafted Lippan Wall Art" },
       {
         name: "description",
         content:
           "Handcrafted Lippan mud-and-mirror wall art from Kutch, made by artisans for modern Indian homes.",
       },
-      { name: "author", content: "Lippen Handcraft Studio" },
-      { property: "og:site_name", content: "Lippen Handcraft Studio" },
-      { property: "og:title", content: "Lippen — Handcrafted Lippan Wall Art" },
+      { name: "author", content: "Lippan Handcraft Studio" },
+      { property: "og:site_name", content: "Lippan Handcraft Studio" },
+      { property: "og:title", content: "Lippan — Handcrafted Lippan Wall Art" },
       {
         property: "og:description",
         content: "Mud-and-mirror wall art raised by hand in Kutch, Gujarat.",
@@ -114,7 +114,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Lippen Handcraft Studio",
+          name: "Lippan Handcraft Studio",
           description: "Handcrafted Lippan mud-and-mirror wall art from Kutch, Gujarat.",
         }),
       },

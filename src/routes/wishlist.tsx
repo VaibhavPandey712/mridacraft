@@ -16,9 +16,9 @@ export const Route = createFileRoute("/wishlist")({
   component: WishlistPage,
   head: () => ({
     meta: [
-      { title: "My Wishlist | Lippen Handcraft" },
-      { name: "description", content: "Artworks you have saved from the Lippen collection." },
-      { property: "og:title", content: "My Wishlist | Lippen" },
+      { title: "My Wishlist | lippan Handcraft" },
+      { name: "description", content: "Artworks you have saved from the lippan collection." },
+      { property: "og:title", content: "My Wishlist | lippan" },
       { property: "og:description", content: "Saved handcrafted Lippan wall art." },
       { property: "og:url", content: "/wishlist" },
       { name: "robots", content: "noindex" },

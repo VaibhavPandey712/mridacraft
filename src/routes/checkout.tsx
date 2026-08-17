@@ -28,10 +28,10 @@ export const Route = createFileRoute("/checkout")({
   ),
   head: () => ({
     meta: [
-      { title: "Checkout | Lippen Handcraft" },
+      { title: "Checkout | Lippan Handcraft" },
       { name: "description", content: "Confirm your address, review your order and pay securely." },
-      { property: "og:title", content: "Checkout | Lippen" },
-      { property: "og:description", content: "Complete your Lippen order." },
+      { property: "og:title", content: "Checkout | Lippan" },
+      { property: "og:description", content: "Complete your Lippan order." },
       { property: "og:url", content: "/checkout" },
       { name: "robots", content: "noindex" },
     ],

@@ -14,9 +14,9 @@ export const Route = createFileRoute("/cart")({
   component: CartPage,
   head: () => ({
     meta: [
-      { title: "Your Cart | Lippen Handcraft" },
+      { title: "Your Cart | Lippan Handcraft" },
       { name: "description", content: "Review the handcrafted artworks in your cart before checkout." },
-      { property: "og:title", content: "Your Cart | Lippen" },
+      { property: "og:title", content: "Your Cart | Lippan" },
       { property: "og:description", content: "Review your handcrafted selections." },
       { property: "og:url", content: "/cart" },
       { name: "robots", content: "noindex" },

@@ -10,15 +10,15 @@ export const Route = createFileRoute("/profile")({
   component: ProfilePage,
   head: () => ({
     meta: [
-      { title: "My Account | Lippen Handcraft" },
+      { title: "My Account | lippan Handcraft" },
       {
         name: "description",
         content: "Manage your profile, orders, addresses and saved artworks.",
       },
-      { property: "og:title", content: "My Account | Lippen" },
+      { property: "og:title", content: "My Account | lippan" },
       {
         property: "og:description",
-        content: "Your Lippen account dashboard.",
+        content: "Your lippan account dashboard.",
       },
       { property: "og:url", content: "/profile" },
       { name: "robots", content: "noindex" },

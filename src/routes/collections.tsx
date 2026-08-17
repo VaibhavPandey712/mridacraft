@@ -20,13 +20,13 @@ export const Route = createFileRoute("/collections")({
   component: CollectionsPage,
   head: () => ({
     meta: [
-      { title: "Collections — Mandalas, Folk Panels & Tile Sets | Lippen" },
+      { title: "Collections — Mandalas, Folk Panels & Tile Sets | Lippan" },
       {
         name: "description",
         content:
-          "Explore Lippen collections: mandalas, folk story panels, mirror work, tile sets and large statement pieces.",
+          "Explore Lippan collections: mandalas, folk story panels, mirror work, tile sets and large statement pieces.",
       },
-      { property: "og:title", content: "Lippen Collections" },
+      { property: "og:title", content: "Lippan Collections" },
       { property: "og:description", content: "Five ways into handcrafted Lippan wall art." },
       { property: "og:url", content: "/collections" },
     ],

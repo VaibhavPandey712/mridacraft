@@ -12,7 +12,7 @@ export const Route = createFileRoute("/admin")({
   ),
   head: () => ({
     meta: [
-      { title: "Studio Admin | Lippen" },
+      { title: "Studio Admin | Lippan" },
       { name: "robots", content: "noindex" },
     ],
   }),

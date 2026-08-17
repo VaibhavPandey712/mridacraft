@@ -21,13 +21,13 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact the Studio | Lippen Handcraft" },
+      { title: "Contact the Studio | Lippan Handcraft" },
       {
         name: "description",
         content:
-          "Questions about a commission, sizing or shipping? Write to the Lippen studio in Bhuj, Kutch.",
+          "Questions about a commission, sizing or shipping? Write to the Lippan studio in Bhuj, Kutch.",
       },
-      { property: "og:title", content: "Contact the Lippen Studio" },
+      { property: "og:title", content: "Contact the Lippan Studio" },
       { property: "og:description", content: "Commissions, sizing and shipping questions." },
       { property: "og:url", content: "/contact" },
     ],

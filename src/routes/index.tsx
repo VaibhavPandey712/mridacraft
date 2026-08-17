@@ -11,13 +11,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Lippen — Handcrafted Lippan Wall Art for Modern Homes" },
+      { title: "Lippan — Handcrafted Lippan Wall Art for Modern Homes" },
       {
         name: "description",
         content:
           "Authentic Lippan mud-and-mirror wall art, hand-raised in Kutch. Mandalas, folk panels and tile sets for modern Indian homes.",
       },
-      { property: "og:title", content: "Lippen — Handcrafted Lippan Wall Art" },
+      { property: "og:title", content: "Lippan — Handcrafted Lippan Wall Art" },
       {
         property: "og:description",
         content: "Made with tradition. Designed for modern homes. Handcrafted Lippan wall art.",

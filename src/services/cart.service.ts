@@ -4,7 +4,7 @@ import type { Cart, CartItem } from "@/types/cart";
 import type { Product } from "@/types/product";
 
 /** Endpoints later: GET/POST /api/cart, PUT/DELETE /api/cart/:id */
-const key = (userId?: string) => `lippen.cart.${userId ?? "guest"}`;
+const key = (userId?: string) => `lippan.cart.${userId ?? "guest"}`;
 
 function build(items: CartItem[]): Cart {
   const subtotal = items.reduce(

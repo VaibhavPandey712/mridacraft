@@ -38,7 +38,7 @@ export const Route = createFileRoute("/shop")({
   }),
   head: () => ({
     meta: [
-      { title: "Shop Handcrafted Lippan Wall Art | Lippen" },
+      { title: "Shop Handcrafted Lippan Wall Art | lippan" },
       {
         name: "description",
         content:
