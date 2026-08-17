@@ -9,7 +9,7 @@ export const Route = createFileRoute("/login")({
     meta: [
       { title: "Log in | Lippen Handcraft Studio" },
       { name: "description", content: "Sign in to track orders, save artworks and manage addresses." },
-      { property: "og:title", content: "Log in | Lippen" },
+      { property: "og:title", content: "Log in | Lippan" },
       { property: "og:description", content: "Access your Lippen account." },
       { property: "og:url", content: "/login" },
     ],

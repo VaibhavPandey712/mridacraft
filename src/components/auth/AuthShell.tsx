@@ -48,10 +48,10 @@ export function AuthShell({
 
         <div className="relative flex h-full flex-col justify-between p-12">
           <Link to="/" className="font-serif text-xl text-secondary">
-            Lippen
+            Lippan
           </Link>
           <div>
-            <p className="text-[11px] uppercase tracking-[0.24em] text-gold">Kutch handcraft</p>
+            <p className="text-[11px] uppercase tracking-[0.24em] text-gold">Handcraft</p>
             <p className="mt-5 max-w-sm font-serif text-3xl leading-snug text-secondary">
               Every mirror in this panel was set by hand, one at a time.
             </p>
@@ -62,7 +62,7 @@ export function AuthShell({
       <div className="flex items-center justify-center px-5 py-16 sm:px-10">
         <div className="w-full max-w-md">
           <Link to="/" className="mb-10 block font-serif text-xl lg:hidden">
-            Lippen
+            Lippan
           </Link>
           <h1 className="text-3xl sm:text-4xl">{title}</h1>
           <p className="mt-3 text-sm text-muted-foreground">{subtitle}</p>

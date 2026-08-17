@@ -29,7 +29,7 @@ export function CraftProcess() {
     <section className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
       <SectionHeading
         eyebrow="How it is made"
-        title="Four hands, fourteen days, one artwork"
+        title="Two hands, fourteen days, one artwork"
         description="Nothing here is moulded or printed. The process is slow on purpose."
         align="center"
       />
