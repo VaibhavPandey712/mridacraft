@@ -71,9 +71,9 @@ function ContactPage() {
         <div className="mx-auto grid max-w-7xl gap-16 px-5 py-16 lg:grid-cols-[1fr_1.2fr] lg:px-10 lg:py-24">
           <div className="space-y-8">
             {[
-              { icon: MapPin, label: "Studio", value: "14 Kumbhar Wada, Bhuj, Kutch, Gujarat 370001" },
-              { icon: Mail, label: "Email", value: "studio@lippen.art" },
-              { icon: Phone, label: "Phone", value: "+91 98250 11223" },
+              { icon: MapPin, label: "Studio", value: "Mridacraft , Lucknow" },
+              { icon: Mail, label: "Email", value: "vaibhavpandey54615@gmail.com" },
+              { icon: Phone, label: "Phone", value: "+91 9336192091" },
             ].map((item) => (
               <div key={item.label} className="flex gap-4">
                 <span className="grid size-10 shrink-0 place-items-center rounded-full bg-secondary text-clay">
