@@ -27,20 +27,19 @@ export function Footer() {
     <footer className="mt-24 border-t border-border bg-secondary/50">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-10">
         <div className="max-w-sm">
-          <p className="font-serif text-2xl">Lippen</p>
+          <p className="font-serif text-2xl">Lippan</p>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Mud-and-mirror wall art raised by hand in Kutch, Gujarat. Every piece leaves the studio
-            signed by the artisan who made it.
+            Lippan art is a traditional Indian mural art from the Kutch region of Gujarat, created using mud and small mirrors to make decorative wall designs.
           </p>
           <div className="mt-6 flex flex-col gap-2 text-sm text-muted-foreground">
-            <a className="flex items-center gap-2 hover:text-clay" href="mailto:studio@lippen.art">
-              <Mail className="size-4" strokeWidth={1.5} /> studio@lippen.art
+            <a className="flex items-center gap-2 hover:text-clay" href="mailto:vaibhavpandey54615@gmail.com">
+              <Mail className="size-4" strokeWidth={1.5} /> vaibhavpandey54615@gmail.com
             </a>
             <a className="flex items-center gap-2 hover:text-clay" href="tel:+919825011223">
-              <Phone className="size-4" strokeWidth={1.5} /> +91 98250 11223
+              <Phone className="size-4" strokeWidth={1.5} /> +91 9336192091
             </a>
-            <a className="flex items-center gap-2 hover:text-clay" href="https://instagram.com">
-              <Instagram className="size-4" strokeWidth={1.5} /> @lippen.studio
+            <a className="flex items-center gap-2 hover:text-clay" href="https://www.instagram.com/mridacraft/">
+              <Instagram className="size-4" strokeWidth={1.5} /> @mridacraft
             </a>
           </div>
         </div>
@@ -62,7 +61,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border/70">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-10">
-          <p>© {new Date().getFullYear()} Lippen Handcraft Studio. Made by hand in India.</p>
+          <p>© {new Date().getFullYear()} Lippan Handcraft Studio. Made by hand in Lucknow.</p>
           <p className="italic">Each piece is individually crafted — no two are ever identical.</p>
         </div>
       </div>

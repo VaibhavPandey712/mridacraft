@@ -13,7 +13,7 @@ export function StoryQuote() {
             “You’re not just buying wall decoration. You’re buying handcrafted culture and art.”
           </blockquote>
           <p className="mt-8 text-sm text-secondary/70">
-            Meera Raval · Founder, Lippen Handcraft Studio
+            Garima Pandey · Founder, Mridacraft
           </p>
           <Button asChild variant="gold" className="mt-10 text-secondary">
             <Link to="/collections">Browse the collections</Link>

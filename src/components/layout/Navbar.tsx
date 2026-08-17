@@ -81,7 +81,7 @@ export function Navbar() {
             L
           </span>
           <span className="min-w-0">
-            <span className="block truncate font-serif text-lg leading-none tracking-tight">Lippen</span>
+            <span className="block truncate font-serif text-lg leading-none tracking-tight">Lippan</span>
             <span className="block text-[9px] uppercase tracking-[0.3em] text-muted-foreground">
               Handcraft Studio
             </span>

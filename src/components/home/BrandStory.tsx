@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 import { Reveal } from "@/components/common/Reveal";
 import { Button } from "@/components/ui/button";
-import artisan from "@/assets/artisan-hands.jpg";
+import artisan from "@/assets/artisan-hands.jpeg";
 
 export function BrandStory() {
   return (

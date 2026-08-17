@@ -50,7 +50,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="text-eyebrow"
         >
-          Kutch · Since 1998
+          Lucknow
         </motion.p>
 
         <h1 className="mt-6 max-w-3xl text-[2.75rem] leading-[1.02] sm:text-6xl lg:text-7xl">

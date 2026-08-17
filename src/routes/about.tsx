@@ -5,18 +5,18 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Reveal } from "@/components/common/Reveal";
 import { CraftProcess } from "@/components/home/CraftProcess";
 import { StoryQuote } from "@/components/home/StoryQuote";
-import artisan from "@/assets/artisan-hands.jpg";
+import artisan from "@/assets/artisan-hands.jpeg";
 import hero from "@/assets/hero-lippan.jpg";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "Our Story — Lippan Artisans of Kutch | Lippen" },
+      { title: "Our Story — Lippan Artisans | Lippan" },
       {
         name: "description",
         content:
-          "Lippen works with 40+ artisan families in Kutch, Gujarat, keeping traditional mud-and-mirror wall art alive for modern homes.",
+          "Lippan Studio by MridaCraft creates handcrafted Lippan art pieces that blend traditional craftsmanship with modern home décor. Each design is carefully made to add elegance, texture, and a unique artistic touch to living spaces.",
       },
       { property: "og:title", content: "Our Story — Lippan Artisans of Kutch" },
       { property: "og:description", content: "Four generations of mud-and-mirror craft." },
@@ -33,8 +33,8 @@ function AboutPage() {
       <div className="pt-20 md:pt-24">
         <PageHeader
           eyebrow="Our story"
-          title="A studio built around forty artisan families"
-          description="Lippen began in a single courtyard in Bhuj. Today the same families raise every piece we sell — paid per artwork, credited by name."
+          title="lorem ipsum "
+          description="Lippan Studio by MridaCraft creates handcrafted Lippan art pieces that blend traditional craftsmanship with modern home décor. Each design is carefully made to add elegance, texture, and a unique artistic touch to living spaces."
         />
 
         <section className="mx-auto max-w-7xl px-5 py-20 lg:px-10 lg:py-28">
@@ -53,8 +53,7 @@ function AboutPage() {
               <h2 className="text-3xl sm:text-4xl">Tradition, without the museum glass</h2>
               <div className="mt-6 space-y-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
                 <p>
-                  Lippan kaam has decorated the interiors of Kutch homes for centuries — clay relief work
-                  studded with mirror so that lamplight travels around a dark room.
+                  Lippan Studio by MridaCraft creates handcrafted Lippan art pieces that blend traditional craftsmanship with modern home décor. Each design is carefully made to add elegance, texture, and a unique artistic touch to living spaces.
                 </p>
                 <p>
                   We keep the technique exactly as it was taught, and change only the format: sealed
@@ -74,7 +73,7 @@ function AboutPage() {
             <Reveal>
               <img
                 src={artisan}
-                alt="Artisan hands setting mirrors into wet clay"
+                alt="Artisan "
                 loading="lazy"
                 width={1200}
                 height={1408}
@@ -89,10 +88,7 @@ function AboutPage() {
                     title: "Fair, per-piece pay",
                     copy: "Artisans set the price of their labour. We do not run reverse auctions.",
                   },
-                  {
-                    title: "Named makers",
-                    copy: "Every artwork ships with the name of the person who raised it.",
-                  },
+                  
                   {
                     title: "Repair, not replace",
                     copy: "Chipped a mirror? Send it back and we will restore it in the studio.",
