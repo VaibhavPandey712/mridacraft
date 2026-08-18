@@ -27,6 +27,8 @@ function LoginPage() {
         <p className="text-center text-xs text-muted-foreground">
           We only use Google Sign-In — no passwords to remember, and your account is created
           automatically on your first sign-in.
+
+          YOU MAY HAVE TO LOGIN TWICE, SORRY FOR THIS INCONVENIENCE !!
         </p>
       </div>
     </AuthShell>
