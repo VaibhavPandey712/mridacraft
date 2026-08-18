@@ -148,7 +148,7 @@ function AdminOrders() {
                     )}
                   </TableCell>
 
-                  <TableCell className="font-medium">
+                  <TableCell className="font-medium ">
                     {formatPrice(order.total)}
                   </TableCell>
 
