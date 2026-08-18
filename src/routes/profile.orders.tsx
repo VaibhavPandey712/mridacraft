@@ -45,7 +45,7 @@ function OrdersPage() {
             <li key={order.id} className="surface-card rounded-sm p-6">
               <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-start">
                 <div className="min-w-0">
-                  <p className="font-serif text-lg">{order.id}</p>
+                  <p className="font-serif text-lg">{order.id.slice(-8).toUpperCase()}</p>
                   <p className="text-xs text-muted-foreground">
                     Placed {formatDate(order.createdAt)} · Payment {order.paymentStatus} ·{" "}
                     {order.paymentMethod.toUpperCase()}
