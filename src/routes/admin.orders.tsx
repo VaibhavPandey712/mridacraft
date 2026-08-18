@@ -21,7 +21,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { formatDate, formatPrice } from "@/lib/format";
 import { getAllOrders, updateOrderStatus } from "@/services/admin.service";
 import { DELIVERY_STATUSES, type DeliveryStatus } from "@/types/order";
-
+import { OrderTimeline } from "@/components/orders/OrderTimeline";
+import { Address } from "@/types/user";
+// display address too
 export const Route = createFileRoute("/admin/orders")({
   component: AdminOrders,
 });
@@ -66,6 +68,7 @@ function AdminOrders() {
                 <TableHead>Placed</TableHead>
                 <TableHead>Payment</TableHead>
                 <TableHead>Items Ordered</TableHead>
+                <TableHead>Address</TableHead>
                 <TableHead>Total</TableHead>
                 <TableHead>Status</TableHead>
               </TableRow>
@@ -93,7 +96,6 @@ function AdminOrders() {
                       {order.paymentStatus}
                     </p>
                   </TableCell>
-
                   {/* ITEMS ORDERED */}
                   <TableCell className="min-w-[260px]">
                     <div className="space-y-2">
@@ -105,13 +107,11 @@ function AdminOrders() {
                           <img
                             src={item.image}
                             alt={item.name}
-                            className="h-12 w-12 rounded-md object-cover border"
+                            className="h-12 w-12 rounded-md border object-cover"
                           />
 
                           <div className="min-w-0 flex-1">
-                            <p className="truncate text-sm font-medium">
-                              {item.name}
-                            </p>
+                            <p className="truncate text-sm font-medium">{item.name}</p>
                             <p className="text-xs text-muted-foreground">
                               Qty: {item.quantity} × {formatPrice(item.price)}
                             </p>
@@ -119,6 +119,33 @@ function AdminOrders() {
                         </div>
                       ))}
                     </div>
+                  </TableCell>
+
+                  {/* ADDRESS */}
+                  <TableCell className="min-w-[220px]">
+                    {order.address ? (
+                      <div className="text-sm">
+                        <p className="font-medium">
+                          {order.address.houseNo}, {order.address.street}
+                        </p>
+                        {order.address.landmark && (
+                          <p className="text-xs text-muted-foreground">
+                            {order.address.landmark}
+                          </p>
+                        )}
+                        <p className="text-xs text-muted-foreground">
+                          {order.address.area}, {order.address.city}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {order.address.state} - {order.address.zip}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          📞 {order.address.mobile}
+                        </p>
+                      </div>
+                    ) : (
+                      <span className="text-muted-foreground text-sm">No address</span>
+                    )}
                   </TableCell>
 
                   <TableCell className="font-medium">
