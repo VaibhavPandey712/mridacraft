@@ -140,7 +140,7 @@ function AdminOrders() {
                           {order.address.state} - {order.address.zip}
                         </p>
                         <p className="text-xs text-muted-foreground">
-                          📞 {order.address.mobile}
+                          📞 {order.address.phone}
                         </p>
                       </div>
                     ) : (
