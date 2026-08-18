@@ -93,6 +93,11 @@ function AboutPage() {
                     title: "Repair, not replace",
                     copy: "Chipped a mirror? Send it back and we will restore it in the studio.",
                   },
+
+                  {
+                    title: "Repair, not replace",
+                    copy: "Chipped a mirror? Send it back and we will restore it in the studio.",
+                  },
                 ].map((item) => (
                   <li key={item.title} className="border-l border-clay/40 pl-6">
                     <h3 className="text-xl">{item.title}</h3>

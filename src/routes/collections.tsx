@@ -49,7 +49,7 @@ function CollectionsPage() {
       <div className="pt-20 md:pt-24">
         <PageHeader
           eyebrow="Collections"
-          title="Five ways into the craft"
+          title="Popular ways into the craft"
           description="Each collection follows a different tradition of Lippan work — pick the one that suits your wall."
         />
 

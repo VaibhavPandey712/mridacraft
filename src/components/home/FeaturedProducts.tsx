@@ -20,7 +20,7 @@ export function FeaturedProducts() {
           <SectionHeading
             eyebrow="Signature pieces"
             title="Chosen by our artisans"
-            description="Four pieces that best show what clay, mirror and patience can do together."
+            description="Some pieces that best show what clay, mirror and patience can do together."
           />
           <Button asChild variant="ghost" className="px-0 text-clay hover:bg-transparent">
             <Link to="/shop" search={{ search: "", category: "All", sort: "newest", min: 0, max: 100000 }}>

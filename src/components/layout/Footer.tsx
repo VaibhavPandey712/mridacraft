@@ -61,7 +61,8 @@ export function Footer() {
       </div>
       <div className="border-t border-border/70">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-10">
-          <p>© {new Date().getFullYear()} Lippan Handcraft Studio. Made by hand in Lucknow.</p>
+          <p>© {new Date().getFullYear()} Mridacraft Studio. Made by hand in Lucknow.           Website Made and Managed by <a href="https://www.linkedin.com/in/vaibhav-pandey05/">Vaibhav Pandey</a></p>
+        
           <p className="italic">Each piece is individually crafted — no two are ever identical.</p>
         </div>
       </div>

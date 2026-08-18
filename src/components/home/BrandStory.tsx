@@ -16,13 +16,11 @@ export function BrandStory() {
             <em className="font-normal italic text-clay">Inspired by tradition.</em>
           </h2>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Every piece carries the story of craftsmanship, culture and creativity. Our artisans build
-            each motif line by line in clay, then set mirrors by eye — a technique passed down through
-            four generations in the villages of Kutch.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text
           </p>
           <dl className="mt-10 grid grid-cols-2 gap-8 sm:max-w-md">
             {[
-              { value: "26 yrs", label: "of studio practice" },
+              { value: "2 yrs", label: "of studio practice" },
               { value: "40+", label: "artisan partners" },
               { value: "9–14 days", label: "to finish one panel" },
               { value: "100%", label: "hand-raised clay work" },

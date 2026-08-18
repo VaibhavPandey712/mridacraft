@@ -81,7 +81,7 @@ function ShopPage() {
         <PageHeader
           eyebrow="The collection"
           title="Every piece, hand-raised"
-          description="Twelve artworks in clay and mirror — from small tile sets to statement panels for a focal wall."
+          description="Artworks in clay and mirror — from small tile sets to statement panels for a focal wall."
         />
 
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 lg:grid-cols-[260px_1fr] lg:gap-16 lg:px-10 lg:py-16">
