@@ -19,8 +19,15 @@
  */
 
 @theme inline {
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  /* --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif; */
+  /* --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Product Sans", "Google Sans", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif; */
+   --font-serif: "Google Sans", "Product Sans", "Plus Jakarta Sans",
+    ui-sans-serif, system-ui, sans-serif;
+
+  --font-sans: "Google Sans", "Product Sans", "Plus Jakarta Sans",
+    ui-sans-serif, system-ui, sans-serif;
   --color-clay: var(--clay);
   --color-clay-foreground: var(--clay-foreground);
   --color-sand: var(--sand);
