@@ -38,7 +38,7 @@ function WishlistPage() {
         <PageHeader
           eyebrow="Saved pieces"
           title="My wishlist"
-          description="Keep the pieces you love in one place — they stay here until you are ready."
+          description="Keep the pieces you love in one place ,they stay here until you are ready."
         />
 
         <div className="mx-auto max-w-5xl px-5 py-14 lg:px-10 lg:py-20">

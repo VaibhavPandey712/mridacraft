@@ -65,7 +65,7 @@ function ContactPage() {
         <PageHeader
           eyebrow="Contact"
           title="Write to the studio"
-          description="Commissions, custom sizes, bulk gifting or a question about care — we read everything ourselves."
+          description="Commissions, custom sizes, bulk gifting or a question about care we read everything ourselves."
         />
 
         <div className="mx-auto grid max-w-7xl gap-16 px-5 py-16 lg:grid-cols-[1fr_1.2fr] lg:px-10 lg:py-24">

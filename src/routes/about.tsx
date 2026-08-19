@@ -61,7 +61,7 @@ function AboutPage() {
                 </p>
                 <p>
                   Nothing is cast from a mould. If you look closely at two pieces of the same design,
-                  you will find the difference — and that is the point.
+                  you will find the difference and that is the point.
                 </p>
               </div>
             </Reveal>
@@ -85,8 +85,8 @@ function AboutPage() {
               <ul className="mt-8 space-y-8">
                 {[
                   {
-                    title: "Fair, per-piece pay",
-                    copy: "Artisans set the price of their labour. We do not run reverse auctions.",
+                    title: "Repair, not replace",
+                    copy: "Chipped a mirror? Send it back and we will restore it in the studio.",
                   },
                   
                   {

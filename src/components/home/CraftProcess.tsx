@@ -10,12 +10,12 @@ const STEPS = [
   {
     step: "02",
     title: "Motifs are drawn",
-    copy: "The artisan free-hands the design — peacocks, vines, mandalas — directly onto the base.",
+    copy: "The artisan free hands the design peacocks, vines, mandalas directly onto the base.",
   },
   {
     step: "03",
     title: "Mirrors are set",
-    copy: "Hand-cut glass is pressed in by eye, one piece at a time, while the clay is still soft.",
+    copy: "Hand cut glass is pressed in by eye, one piece at a time, while the clay is still soft.",
   },
   {
     step: "04",

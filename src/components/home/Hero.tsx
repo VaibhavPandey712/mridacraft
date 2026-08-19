@@ -73,7 +73,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.5 }}
           className="mt-7 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base"
         >
-          Authentic Lippan wall art — made with tradition, designed for modern homes. Raised in clay,
+          Authentic Lippan wall art made with tradition, designed for modern homes. Raised in clay,
           set with mirrors, finished entirely by hand.
         </motion.p>
 

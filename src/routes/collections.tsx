@@ -50,7 +50,7 @@ function CollectionsPage() {
         <PageHeader
           eyebrow="Collections"
           title="Popular ways into the craft"
-          description="Each collection follows a different tradition of Lippan work — pick the one that suits your wall."
+          description="Each collection follows a different tradition of Lippan work pick the one that suits your wall."
         />
 
         <div className="mx-auto max-w-7xl px-5 py-16 lg:px-10 lg:py-24">

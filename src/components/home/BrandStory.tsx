@@ -20,9 +20,9 @@ export function BrandStory() {
           </p>
           <dl className="mt-10 grid grid-cols-2 gap-8 sm:max-w-md">
             {[
-              { value: "2 yrs", label: "of studio practice" },
-              { value: "40+", label: "artisan partners" },
-              { value: "9–14 days", label: "to finish one panel" },
+              { value: "5 yrs", label: "of studio practice" },
+              { value: "2", label: "artisans" },
+              { value: "9-14 days", label: "to finish one panel" },
               { value: "100%", label: "hand-raised clay work" },
             ].map((stat) => (
               <div key={stat.label}>
