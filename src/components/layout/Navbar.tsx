@@ -78,10 +78,10 @@ export function Navbar() {
       >
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Lippan home">
           <span className="grid size-9 shrink-0 place-items-center rounded-full border border-gold/70 font-serif text-base text-clay">
-            L
+            M
           </span>
           <span className="min-w-0">
-            <span className="block truncate font-serif text-lg leading-none tracking-tight">Lippan</span>
+            <span className="block truncate font-serif text-lg leading-none tracking-tight">Mridacraft</span>
             <span className="block text-[9px] uppercase tracking-[0.3em] text-muted-foreground">
               Handcraft Studio
             </span>
