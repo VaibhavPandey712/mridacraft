@@ -16,7 +16,7 @@ function SettingsPage() {
       <div className="surface-card mt-8 divide-y divide-border rounded-sm">
         {[
           { label: "Order updates by email", hint: "Dispatch, delivery and studio notes." },
-          { label: "New collection announcements", hint: "About four emails a year." },
+          { label: "New collection announcements", hint: "" },
           { label: "Artisan stories", hint: "Occasional letters from the workshop." },
         ].map((item, index) => (
           <div key={item.label} className="flex items-center justify-between gap-6 p-6">
@@ -29,7 +29,7 @@ function SettingsPage() {
         ))}
       </div>
 
-      <div className="mt-8">
+      {/* <div className="mt-8">
         <Button
           variant="quiet"
           onClick={() => {
@@ -39,7 +39,7 @@ function SettingsPage() {
         >
           Log out of this device
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 }
