@@ -47,7 +47,10 @@ export async function getOrderById(id: string, _userId?: string): Promise<Order 
 /** Admin only */
 export async function getAllOrders(): Promise<Order[]> {
   const raw = await apiFetch<RawOrder[]>("/api/orders/admin/all");
-  return raw.map(mapOrder);
+  return raw.map((order) => ({
+    ...order,
+    id: order.id ?? order._id, // supports both formats
+  }));
 }
 
 /** Admin only */

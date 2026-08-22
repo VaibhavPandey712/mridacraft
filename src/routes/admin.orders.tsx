@@ -78,7 +78,7 @@ function AdminOrders() {
               {(orders ?? []).map((order) => (
                 <TableRow key={order.id}>
                   <TableCell className="font-mono text-xs">
-                    #{order.id.slice(-8)}
+                    #{order.id?.slice(-8) ?? "--------"}
                   </TableCell>
 
                   <TableCell>
@@ -126,25 +126,29 @@ function AdminOrders() {
                     {order.address ? (
                       <div className="text-sm">
                         <p className="font-medium">
-                          {order.address.houseNo}, {order.address.street}
+                          {order.address.house}, {order.address.street}
                         </p>
+
                         {order.address.landmark && (
                           <p className="text-xs text-muted-foreground">
                             {order.address.landmark}
                           </p>
                         )}
+
                         <p className="text-xs text-muted-foreground">
-                          {order.address.area}, {order.address.city}
+                          {order.address.city}, {order.address.state}
                         </p>
+
                         <p className="text-xs text-muted-foreground">
-                          {order.address.state} - {order.address.zip}
+                          {order.address.pincode}, {order.address.country}
                         </p>
+
                         <p className="text-xs text-muted-foreground">
                           📞 {order.address.phone}
                         </p>
                       </div>
                     ) : (
-                      <span className="text-muted-foreground text-sm">No address</span>
+                      <span className="text-sm text-muted-foreground">No address</span>
                     )}
                   </TableCell>
 
